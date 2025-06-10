@@ -21,3 +21,4 @@ Explorar en detalle cómo definir dependencias entre trabajos, así como cómo e
 3. Modificar el trabajo unit-tests para permitir la continuación del flujo de trabajo incluso si éste falla. Esto se puede hacer agregando continue-on-error: true en el nivel de definición del job.
 4. Confirmar los cambios y hacer push del código. Desencadenar el flujo de trabajo desde la IU, proporcionando valores variables para el input pass-unit-tests. Tómese unos momentos para inspeccionar la salida de las ejecuciones del flujo de trabajo.  ¿Cómo afectó el fallo de un solo job al flujo de ejecución?
 5. continue-on-error debe usarse con moderación, solo si hay un caso de uso específico (por ejemplo, características experimentales). En este caso, la hemos usado para poder analizar las casuísticas de dependencias de trabajo. Eliminar la opción continue-on-error de la definición del job, confirmar los cambios y hacer push del código.
+
